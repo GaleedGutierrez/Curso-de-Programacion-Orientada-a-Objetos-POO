@@ -10,4 +10,4 @@ class Car {
         let {driver} = this;
         console.table(driver);
     }
-}
+};
