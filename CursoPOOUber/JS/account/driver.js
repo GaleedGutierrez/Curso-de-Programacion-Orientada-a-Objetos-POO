@@ -1,5 +1,5 @@
 class Driver extends Account {
-    constructor (name, document) {
-        super(name, document);
+    constructor (id, name, document) {
+        super(id, name, document);
     };
 };
