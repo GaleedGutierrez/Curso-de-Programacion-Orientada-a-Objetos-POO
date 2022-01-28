@@ -7,12 +7,10 @@ class Account {
         this.password;
     };
 
-    printUserData () {
-        let {id, name, document} = this;
+    printUserData (account) {
+        const {id} = this;
         console.group(`User with id ${id}`);
-        console.log(`Id: ${id}`);
-        console.log(`Name: ${name}`);
-        console.log(`Document: ${document}`);
+        console.table(account);
         console.groupEnd();
-    }
-}
+    };
+};
