@@ -1,26 +1,28 @@
 class Car {
+    #id;
+    #license;
+    #driver;
     #passegenger;
     constructor(license, driver) {
-        this.id;
-        this.license = license;
-        this.driver = driver;
+        this.#id;
+        this.#license = license;
+        this.#driver = driver;
         this.#passegenger = 0;
     }
 
-    get passegengers () {
+    get getPassegenger () {
         return `The passegenger/s is/are: ${this.#passegenger} `;
     }
 
-    set passegengers (amount) {
+    set setPassegenger (amount) {
         amount === 4 
         ? this.#passegenger = amount
-        : console.log('Tienen que ser cuatro pasajeros.');
+        : console.log('Tienen que ser cuatro asientos.');
     }
     
     printDataCar() {
-        let {driver} = this;
         console.group('Driver');
-        console.table(driver);
+        console.table(this.#driver);
         console.groupEnd();
     }
 };
