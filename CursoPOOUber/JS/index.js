@@ -4,10 +4,15 @@ const conductor = new Account(78998 ,'Andres Herrera', 'AND123');
 // car.passegenger = 4;
 // car.printDataCar();
 
-const carX = new UberX('JPA567', conductor, 'Testa', 'S');
-carX.printDataCar();
-carX.passegengers = 4;
-console.log(carX.passegengers);
+const uberX = new UberX('JPA567', conductor, 'Testa', 'S');
+// uberX.printDataCar();
+uberX.setPassegenger = 4;
+// console.log(uberX.getPassegenger);
+
+const uberVan = new UberVan('VAN123', conductor, 'Chevrolet Safira', 'Cuero');
+uberX.printDataCar();
+uberVan.setPassegenger = 6;
+console.log(uberVan.getPassegenger);
 
 // const user1 = new User(123, 'Juan Perez', 'JP123456');
 // user1.printUserData(user1);
